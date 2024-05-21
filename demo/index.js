@@ -11,7 +11,7 @@ const wind = (window.wind = new WindGL(gl));
 wind.numParticles = 5000;
 
 var capturer = new CCapture({
-  format: "png",
+  format: "jpg",
   framerate: 60,
   quality: 100,
   //startTime: 5,
@@ -48,13 +48,13 @@ window.addEventListener("keydown", (event) => {
 
 const gui = new dat.GUI();
 gui.add(wind, "numParticles", 1024, 589824);
-gui.add(wind, "fadeOpacity", 0.96, 0.999).step(0.001).updateDisplay();
+gui.add(wind, "fadeOpacity", 0.96, 0.9999).step(0.0001).updateDisplay();
 gui.add(wind, "speedFactor", 0.05, 1.0);
 gui.add(wind, "dropRate", 0, 0.1);
 gui.add(wind, "dropRateBump", 0, 0.2);
 
 const windFiles = {
-  0: "2024041500",
+  0: "test",
   //   0: "2024041506",
   6: "2024041506",
   12: "2024041512",

@@ -2,7 +2,7 @@ const PNG = require("pngjs").PNG;
 const fs = require("fs");
 const { umask } = require("process");
 
-const data = JSON.parse(fs.readFileSync("tmp25.json"));
+// const data = JSON.parse(fs.readFileSync("tmp25.json"));
 // const name = process.argv[2];
 const name = "test";
 // const uData = data.u.messages[0];
@@ -20,7 +20,7 @@ const name = "test";
 // uMax, uMin, vMax, vMin
 // 28.6884 -19.7116 20.2977 -21.4023
 
-const newData = JSON.parse(fs.readFileSync("guangling.json"));
+const newData = JSON.parse(fs.readFileSync("guangling2.json"));
 const uData = newData[0].data;
 const uMin = Math.min(...uData);
 const uMax = Math.max(...uData);
@@ -116,6 +116,9 @@ fs.writeFileSync(
       uMax: uMax,
       vMin: vMin,
       vMax: vMax,
+      // below added from windgl lib
+      minzoom: 0,
+      maxzoom: 2,
     },
     null,
     2
