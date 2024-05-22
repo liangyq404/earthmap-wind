@@ -10,6 +10,7 @@
     "serve": "st -nc -i index.html",
     "start": "run-p serve watch"
   },
+"type": "module",
   "keywords": [],
   "author": "Vladimir Agafonkin",
   "license": "ISC",
@@ -40,6 +41,8 @@
   },
   "dependencies": {
     "axios": "^1.6.8",
-    "ccapture.js": "^1.1.0"
+    "ccapture.js": "^1.1.0",
+    "heatmap.js": "^2.0.5",
+    "rgb-hex": "^4.1.0"
   }
 }
