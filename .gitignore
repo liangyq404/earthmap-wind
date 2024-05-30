@@ -69,3 +69,4 @@ Thumbs.db
 
 #large files
 *.mov
+*.json
